@@ -1,5 +1,5 @@
 from django import forms
-from windriver import const
+from windriver import settings
 
 class SearchEngineAuthenticationForm(forms.Form):
     """simple name/password authentication form"""
@@ -8,7 +8,7 @@ class SearchEngineAuthenticationForm(forms.Form):
 
     def clean_username(self):
         """validates that username is the same as const"""
-        if self.cleaned_data['username'] != const.SEARCH_LOGIN_USERNAME:
+        if self.cleaned_data['username'] != settings.SEARCH_LOGIN_USERNAME:
             del self.cleaned_data['username']
             raise forms.ValidationError('wrong user')
         return self.cleaned_data['username']
