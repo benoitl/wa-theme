@@ -1,3 +1,4 @@
+"""forms for the `windriver` app"""
 from django import forms
 from windriver import settings
 
