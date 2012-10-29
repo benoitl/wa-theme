@@ -31,6 +31,13 @@
         </div>
         {% endif %}
         {% include "widgets/header.html" %} {# Logo, user tool navigation and meta navitation #}
+        {% if announcements %}
+            <div class="content-wrapper announcements">
+                {% for announcement in announcements %}
+                    <div class="announcement">{{ announcement }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
         <div class="new-container">
             {% include "widgets/secondary_header.html" %} {# Scope selector, search input and ask button #}
             {% if settings.ENABLE_LEADING_SIDEBAR %}
