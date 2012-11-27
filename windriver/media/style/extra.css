@@ -50,10 +50,10 @@
   padding: 0;
 }
 body {
-  background: #00000f;
+  background: #fffffc;
 }
 #header {
-  background: #00000f;
+  background: #fffffc;
 }
 #logo img {
   width: 338px;
@@ -71,7 +71,7 @@ body {
   text-transform: lowercase;
 }
 #userToolsNav a:hover {
-  color: #FFFFFF;
+  color: #cc0000;
 }
 #userToolsNav .user-info, #userToolsNav .user-micro-info {
   color: #9a9a9c;
@@ -748,7 +748,7 @@ submit {
   width: 450px;
   margin-left: -3px;
   float: left;
-  background-color: #f4f6f7
+  background-color: #fffffc
 }
 #logocustomhead img {
     height: 30px;
