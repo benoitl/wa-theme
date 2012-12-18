@@ -107,7 +107,7 @@
                     <td><strong class="darkred">{{ votes_today_left }}</strong> {% trans %}votes left{% endtrans %}</td>
                 </tr>
                 {% endif %}
-                {% if request.user.is_group_member('Wind River') %}
+                {% if request.user.is_authenticated() and request.user.is_group_member('Wind River') %}
                 <tr>
                     <td>{% trans %}check user{% endtrans %}</td>
                     <td><a href="https://supportctest.wrs.com:4446/ols/kfoco/userinfo.php?e={{ view_user.email }}">{% trans %}Wind River profile{% endtrans %}</a></td>
