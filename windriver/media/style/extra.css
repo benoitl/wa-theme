@@ -173,7 +173,7 @@ body {
   padding-right: 12px;
   font-size: 15px !important;
   font-weight: bold;
-  color: #000 !important;
+  color: #000;/* !important;*/
 }
 #secondaryHeader #scopeWrapper a:hover {
   background-color: #c8c8c8;
@@ -203,21 +203,25 @@ body {
   /* Main search form , check widgets/search_bar.html */
 
   display: inline-block;
-  width: 425px;
+  width: 423px;
   background: none;
   border: none;/*1px solid #c9c9b5;*/
   float: left;
 }
-#searchBar .searchInput, #searchBar .searchInputCancelable {
-  font-size: 16px;
+#searchBar input.searchInput, #searchBar input.searchInputCancelable {
+  font-size: 20px;
   height: 32px;
   line-height: 32px;
   margin-top: 5px;
-  border-radius: 10px;
-  -ms-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
+  padding-left: 8px;
+  border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+}
+#searchBar div.input-tool-tip {
+    padding: 7px 0 0 8px;
 }
 #searchBar .searchInput {
   width: 340px;
@@ -267,17 +271,76 @@ body {
 #searchBar .cancelSearchBtn:hover {
   color: #d84040;
 }
+#searchBar {
+    margin-left: 239px;
+}
 body.anon #searchBar {
   width: 510px;
+  margin-left: 157px;
 }
 body.anon #searchBar .searchInput {
-  width: 425px;
+  width: 504px;
 }
 body.anon #searchBar .searchInputCancelable {
   width: 390px;
 }
-.main-page #question-list {
-  margin-top: 5px !important;
+.search-drop-menu {
+    background: #fcfcfc;
+    margin-left: 246px;
+    position: absolute;
+    top: 40px;
+    width: 433px;
+}
+body.anon .search-drop-menu {
+    margin-left: 164px;
+    width: 514px;
+}
+.ask-form-bar {
+    position: relative;
+}
+body.anon.ask-page .search-drop-menu,
+.ask-page .search-drop-menu {
+    left: 2px;
+    top: 46px;
+    width: 100%;
+}
+.ask-page .input-tool-tip {
+    color: white;
+    display: none;
+    height: 0;
+    z-index: 0;
+}
+.ask-page .search-drop-menu ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+.search-drop-menu ul {
+    padding-top: 10px;
+}
+.search-drop-menu ul li.selected,
+.search-drop-menu ul li:hover {
+    background: #b2b2b2;
+    color: #464646;
+}
+.search-drop-menu .submit {
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    -moz-text-shadow: none;
+    -webkit-text-shadow: none;
+}
+#secondaryHeader #scopeWrapper .search-drop-menu a,
+.ask-page .search-drop-menu a {
+    border: none;
+    color: #464646;
+    padding-left: 0;
+    font-weight: normal;
+}
+#secondaryHeader #scopeWrapper .search-drop-menu a:hover,
+.ask-page .search-drop-menu a:hover {
+    background: none;
 }
 #askButton {
   /* check blocks/secondary_header.html and widgets/ask_button.html*/
@@ -532,7 +595,9 @@ body.anon #searchBar .searchInputCancelable {
   margin-top: -7px;
 }
 #askFormBar .questionTitleInput {
-  width: 717px;
+  color: #666;
+  width: 714px;
+  padding: 0 8px;
 }
 #fmanswer input.submit, .ask-page input.submit, .edit-question-page input.submit {
   width: 160px;
@@ -610,7 +675,8 @@ body.anon #searchBar .searchInputCancelable {
 #email-input-fs .submit-b,
 #local_login_buttons .submit-b,
 #password-fs .submit-b,
-#openid-fs .submit-b {
+#openid-fs .submit-b,
+.search-drop-menu .submit {
   width: 100px;
   height: 24px;
   font-size: 15px;
@@ -647,7 +713,8 @@ body.anon #searchBar .searchInputCancelable {
 #email-input-fs .submit-b:hover,
 #local_login_buttons .submit-b:hover,
 #password-fs .submit-b:hover,
-#openid-fs .submit-b:hover {
+#openid-fs .submit-b:hover,
+.search-drop-menu .submit:hover {
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#b6b6b6));
@@ -660,6 +727,11 @@ body.anon #searchBar .searchInputCancelable {
   text-shadow: 0px 1px 0px #ffffff;
   -moz-text-shadow: 0px 1px 0px #ffffff;
   -webkit-text-shadow: 0px 1px 0px #ffffff;
+}
+.search-drop-menu .submit {
+    height: auto;
+    width: auto;
+    padding: 0 1em;
 }
 .question-page p.rss {
   padding: 3px 0 0 26px;
