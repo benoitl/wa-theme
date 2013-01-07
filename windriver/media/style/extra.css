@@ -129,7 +129,7 @@ body {
   font-family: Arial;
 }
 #secondaryHeader .part1 {
-  width: 740px;
+  width: 940px;
   float: left;
   background: #ccc;
   border-radius: 6px;
@@ -139,7 +139,7 @@ body {
   -khtml-border-radius: 6px;
 }
 .ask-page #secondaryHeader .part1 {
-    width: 960px;
+    width: 1160px;
 }
 .ask-page #ContentRight {
     width: 220px;
@@ -163,7 +163,7 @@ body {
   background: url(../images/home.png) no-repeat center center;
 }
 #secondaryHeader #scopeWrapper {
-  width: 688px;
+  width: 888px;
   float: left;
 }
 #secondaryHeader #scopeWrapper a {
@@ -203,10 +203,13 @@ body {
   /* Main search form , check widgets/search_bar.html */
 
   display: inline-block;
-  width: 423px;
+  width: 623px;
   background: none;
   border: none;/*1px solid #c9c9b5;*/
   float: left;
+}
+#searchBar input.searchInput {
+  width: 85%;
 }
 #searchBar input.searchInput, #searchBar input.searchInputCancelable {
   font-size: 20px;
@@ -786,7 +789,7 @@ submit {
 }
 .new-container {
   background: #fff;
-  width: 960px;
+  width: 1160px;
   padding: 10px;
   border-radius: 10px;
   -ms-border-radius: 10px;
@@ -815,7 +818,7 @@ submit {
 }
 #customhead {
   margin-top: 15px;
-  width: 960px;
+  width: 1160px;
   height: 98px;
 }
 #customhead #logocustomhead {
@@ -1010,7 +1013,7 @@ submit {
 .question-page .question-content {
     margin-left: 6px;
     padding-top: 10px;
-    width: 675px;
+    width: 875px;
 }
 .question-page #comment-title {
     font-size: 14px;
@@ -1030,4 +1033,24 @@ submit {
     box-shadow; 1px 1px 2px #636363;
     -webkit-box-shadow: 1px 1px 2px #636363;
     -moz-box-shadow: 1px 1px 2px #636363;
+}
+
+#ContentLeft {
+   width: 930px;
+}
+
+.content-wrapper {
+   width:1160px;
+}
+.short-summary {
+  width: 933px;
+}
+.question-page #question-table, .question-page .answer-table {
+   width: 870px;
+}
+#ContentFull {
+  width: 1160px;
+}
+.user-stats-table .narrow {
+  width: 860px;
 }
