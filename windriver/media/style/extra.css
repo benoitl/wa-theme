@@ -1054,3 +1054,9 @@ submit {
 .user-stats-table .narrow {
   width: 860px;
 }
+#ground {
+  background-color: #EEEBE8;
+}
+.footer-links a {
+  color: #9A9A9C;
+}

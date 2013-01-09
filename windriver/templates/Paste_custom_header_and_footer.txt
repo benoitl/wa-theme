@@ -30,7 +30,7 @@ In askbot settings Logos and HTML <head> parts
 ///////// PASTE ON CUSTOM FOOTER IN ASKBOT SETTINGS AND SELECT SITE FOOTER MODE TO CUSTOMIZE //////////
 
 <div id ="customfooter" class="content-wrapper">
-2012 Wind River ©
+2013 Wind River ©
 <a href="#">Term of use</a>•
 <a href="#">Careers</a>•
 <a href="#">My Account</a>•
